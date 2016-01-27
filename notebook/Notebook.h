@@ -9,7 +9,7 @@ public:
     ~Notebook();
     void ligarComputador(bool x);
     void aumentaVolumeDoSom(int x);
-    
+    void capacidadeDaBateria(int x);
 
 private:
     bool ligado;
