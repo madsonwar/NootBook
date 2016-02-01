@@ -1,16 +1,24 @@
 #include "Notebook.h"
+#include <string>
 
 Notebook::Notebook()
 {
+    ligado=false;
+    bateria=0;
 }
+Notebook::Notebook(string fabric )
+{
+    fabricante=fabric;
+}
+
 
 Notebook::~Notebook()
 {
 }
 
 void Notebook::ligarComputador(bool x){
-    if(x==1)
-        printf("Computador Ligado\n");
+    ligado=true;
+    printf("computador esta ligado\n");
     }
     
 void Nootbook::executarPrograma(String x){
@@ -20,3 +28,12 @@ void Nootbook::executarPrograma(String x){
     
     }
     
+void Nootbook::aumentaVolumeDoSom(int x){
+    
+    volumeDoSom=volumeDoSom+x;
+    
+    }
+    
+void Nootbook::capacidadeDaBateria(int x){
+    if(bateria<30) printf("Bateria precisa ser recarregada\n");
+    }
