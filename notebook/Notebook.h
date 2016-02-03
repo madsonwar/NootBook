@@ -7,9 +7,10 @@ class Notebook
 public:
     Notebook(); 
     Notebook(string fabric);
+    Notebook(const Notebook &);
     ~Notebook();
     void ligarComputador(bool x);
-    void aumentaVolumeDoSom(int x);
+    void aumentaVolumeDoSom(int aumento);
     void capacidadeDaBateria(int x);
     void executarPrograma(string x);
 private:
@@ -17,6 +18,7 @@ private:
     int volumeDoSom;
     string fabricante;
     string programa;
+    static int versaoDaBios;
     
     
 };
