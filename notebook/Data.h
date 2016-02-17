@@ -6,7 +6,14 @@ class Data
 public:
     Data();
     ~Data();
+    Data(int dia, int mes, int ano);
+private:
+    int dia;
+    int mes;
+    int ano;
+
 
 };
+
 
 #endif // DATA_H

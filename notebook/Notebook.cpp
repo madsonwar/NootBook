@@ -1,6 +1,6 @@
 #include "Notebook.h"
 #include <string>
-
+#include <Data.h>
 
 int Notebook::versaoDaBios = 0;
 
@@ -50,4 +50,8 @@ void Nootbook::capacidadeDaBateria(){
     if(bateria<30) printf("Bateria precisa ser recarregada\n");
     
     
+    }
+    void Notebook::mostrarVersaoDaBios(){
+    
+    printf("A versao da bios é %d",versaoDaBios);
     }
