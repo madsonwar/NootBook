@@ -6,6 +6,7 @@ class Data
 public:
     Data();
     ~Data();
+
     Data(int dia, int mes, int ano);
 private:
     int dia;
@@ -16,4 +17,4 @@ private:
 };
 
 
-#endif // DATA_H
+
