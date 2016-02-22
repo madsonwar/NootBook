@@ -96,5 +96,7 @@
     <File Name="Notebook.cpp"/>
     <File Name="Data.h"/>
     <File Name="Data.cpp"/>
+    <File Name="HD.hpp"/>
+    <File Name="HD.cpp"/>
   </VirtualDirectory>
 </CodeLite_Project>

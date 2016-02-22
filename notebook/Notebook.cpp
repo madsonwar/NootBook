@@ -1,19 +1,30 @@
 #include "Notebook.h"
-#include <string>
-#include <Data.h>
+#include <iostream>
+#include "Data.h"
+#include "HD.h"
+#include "HD.hpp"
+
 
 int Notebook::versaoDaBios = 0;
 
-Notebook::Notebook()
+Notebook::Notebook(const int nprocessos)
 {
     ligado = false;
     bateria = 0;
+    if ( nprocessos > 0 )
+    {
+        filaDeProcessos = new string[quantProcessos];
+        quantLivros=nprocessos;
+        cout << "Numero de processos eh" << 
+    
+    }
 }
-Notebook::Notebook(string &fabric )
+Notebook::Notebook(string &fabric , Data &x)
 {
     fabricante = fabric;
     ligado = false;
     bateria = 0;
+    
 }
 Notebook::Notebook(const Notebook &a)
 {
@@ -28,30 +39,61 @@ Notebook::~Notebook()
 {
 }
 
-void Notebook::ligarComputador(bool liga){
-    ligado = true;
-    printf("computador esta ligado\n");
-    }
+void Notebook::ligarComputador()
+{   
+    if(ligado)
+        {
+            cout << "computador jah esta ligado\n";
     
-void Nootbook::executarPrograma(String prog){
+        }
+    else 
+        {
+            cout << "computador foi ligado\n";
+        
+        }
     
-        printf("Executando o programa %s\n",prog);
+}
+            
     
+void Nootbook::executarPrograma(String prog)
     
-    }
+{
     
-void Nootbook::aumentaVolumeDoSom(int aumento){
+        
+    cout << "Executando o programa" << prog << '\n';
     
-    volumeDoSom = volumeDoSom+aumento;
+}
     
-    }
+void Nootbook::aumentaVolumeDoSom()
     
-void Nootbook::capacidadeDaBateria(){
-    if(bateria<30) printf("Bateria precisa ser recarregada\n");
+{
     
+    volumeDoSom  +=2;
     
-    }
-    void Notebook::mostrarVersaoDaBios(){
+}
     
-    printf("A versao da bios é %d",versaoDaBios);
-    }
+
+void Notebook::mostrarVersaoDaBios()
+    
+{
+    
+        
+    cout << "A versão da bios e" << versaoDaBios << '\n';
+        
+}
+    
+void Notebook::meuComputador()
+{
+        
+    cout << 
+        
+        
+}
+
+void Notebook::inserirProcesso(const string &process, const index)
+{
+    
+    if(index >= 0 && index < quantProcessos)
+            filaDeProcessos[]
+    
+}
