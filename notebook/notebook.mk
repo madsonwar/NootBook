@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=FACOMP
-Date                   :=22/02/2016
+Date                   :=24/02/2016
 CodeLitePath           :="C:\Program Files\CodeLite"
 LinkerName             :=C:/cygwin64/bin/x86_64-pc-cygwin-g++.exe
 SharedObjectLinkerName :=C:/cygwin64/bin/x86_64-pc-cygwin-g++.exe -shared -fPIC
@@ -62,7 +62,7 @@ AS       := C:/cygwin64/bin/x86_64-pc-cygwin-as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Notebook.cpp$(ObjectSuffix) $(IntermediateDirectory)/Data.cpp$(ObjectSuffix) $(IntermediateDirectory)/HD.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IntermediateDirectory)/Notebook.cpp$(ObjectSuffix) 
 
 
 
@@ -108,22 +108,6 @@ $(IntermediateDirectory)/Notebook.cpp$(DependSuffix): Notebook.cpp
 
 $(IntermediateDirectory)/Notebook.cpp$(PreprocessSuffix): Notebook.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Notebook.cpp$(PreprocessSuffix) "Notebook.cpp"
-
-$(IntermediateDirectory)/Data.cpp$(ObjectSuffix): Data.cpp $(IntermediateDirectory)/Data.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/FACOMP/git/NoteBook/notebook/Data.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Data.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/Data.cpp$(DependSuffix): Data.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Data.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Data.cpp$(DependSuffix) -MM "Data.cpp"
-
-$(IntermediateDirectory)/Data.cpp$(PreprocessSuffix): Data.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Data.cpp$(PreprocessSuffix) "Data.cpp"
-
-$(IntermediateDirectory)/HD.cpp$(ObjectSuffix): HD.cpp $(IntermediateDirectory)/HD.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/FACOMP/git/NoteBook/notebook/HD.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/HD.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/HD.cpp$(DependSuffix): HD.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/HD.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/HD.cpp$(DependSuffix) -MM "HD.cpp"
-
-$(IntermediateDirectory)/HD.cpp$(PreprocessSuffix): HD.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/HD.cpp$(PreprocessSuffix) "HD.cpp"
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)

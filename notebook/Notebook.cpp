@@ -1,8 +1,8 @@
 #include "Notebook.h"
 #include <iostream>
-#include "Data.h"
-#include "HD.h"
-#include "HD.hpp"
+#include <string>
+using namespace std;
+
 
 
 int Notebook::versaoDaBios = 0;
@@ -23,15 +23,15 @@ Notebook::Notebook(string &fabric , Data &x)
 {
     fabricante = fabric;
     ligado = false;
-    bateria = 0;
+    //bateria = 0;
     
 }
 Notebook::Notebook(const Notebook &a)
 {
-    fabricante = a.Notebook;
-    ligado = a.Notebook;
-    volumeDoSom = a.Notebook;
-    programa = a.Notebook;
+    fabricante = a.fabricante;
+    ligado = a.ligado;
+    volumeDoSom = a.volumeDoSom;
+    programa = a.programa;
     
     
 }
@@ -47,7 +47,7 @@ void Notebook::ligarComputador()
     
         }
     else 
-        {
+        { ligado=true;
             cout << "computador foi ligado\n";
         
         }
@@ -55,7 +55,7 @@ void Notebook::ligarComputador()
 }
             
     
-void Nootbook::executarPrograma(String prog)
+void Notebook::executarPrograma(string prog)
     
 {
     
@@ -64,8 +64,8 @@ void Nootbook::executarPrograma(String prog)
     
 }
     
-void Nootbook::aumentaVolumeDoSom()
-    
+
+void Notebook::aumentaVolumeDoSom()
 {
     
     volumeDoSom  +=2;
@@ -82,7 +82,7 @@ void Notebook::mostrarVersaoDaBios()
         
 }
     
-void Notebook::meuComputador()
+/*void Notebook::meuComputador()
 {
         
     cout << 
@@ -96,4 +96,28 @@ void Notebook::inserirProcesso(const string &process, const index)
     if(index >= 0 && index < quantProcessos)
             filaDeProcessos[]
     
+}*/
+ostream &operator<<( ostream &output, const Notebook &dell)
+{
+    output <<  "(" << dell.fabricante << ")";
+    
+    return output;
 }
+
+const Notebook &operator=( const Notebook &dell )
+   :size( dell.size ) 
+{
+    ptr = new int [ size ];
+    
+    fabricante = dellfabricante;
+    
+}
+
+bool Notebook::operator==( const Notebook &dell)
+
+{
+    if(fabricante != &dell.fabricante)
+        return false;
+    
+}
+
