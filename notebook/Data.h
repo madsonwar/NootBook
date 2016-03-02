@@ -5,17 +5,13 @@ class Data
 {
 public:
     Data();
+    Data(int , int , int);
     ~Data();
-
-    Data(int dia, int mes, int ano);
 private:
     int dia;
     int mes;
     int ano;
 
-
 };
 
-
-
-
+#endif // DATA_H

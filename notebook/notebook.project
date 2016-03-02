@@ -92,7 +92,13 @@
   </Settings>
   <VirtualDirectory Name="src">
     <File Name="main.cpp"/>
-    <File Name="Notebook.h"/>
-    <File Name="Notebook.cpp"/>
+    <File Name="notebook.h"/>
+    <File Name="notebook.cpp"/>
+    <File Name="Data.h"/>
+    <File Name="Data.cpp"/>
+    <File Name="Hd.h"/>
+    <File Name="Hd.cpp"/>
+    <File Name="Device.h"/>
+    <File Name="Device.cpp"/>
   </VirtualDirectory>
 </CodeLite_Project>

@@ -1,8 +1,16 @@
 #include "Data.h"
 
-Data::Data(int dia, int mes, int ano)
+Data::Data()
 {
-    
+    dia=0;
+    mes=0;
+    ano=0;
+}
+Data::Data(int d, int m, int da)
+{
+    dia=d;
+    mes=m;
+    ano=da;
     
 }
 

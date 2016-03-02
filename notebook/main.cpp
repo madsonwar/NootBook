@@ -1,12 +1,20 @@
 #include <stdio.h>
-#include "Notebook.h"
+#include "Data.h"
 #include <string>
+#include <iostream>
+#include "notebook.h"
+using namespace std;
 int main(int argc, char **argv)
 {
-    Notebook noot;
+	notebook dell;
     
-	printf("hello world\n");
+    dell.executarPrograma("anti virus");
+    dell.ligarDesligarAparelho();
+    dell.executarPrograma("anti virus");
+    dell.aumVol();
+    dell.aumVol();
+    dell.aumVol();
+    dell.dimVol();
+ printf("hello world\n");
 	return 0;
-noot.ligarComputador();
-
 }
