@@ -2,11 +2,13 @@
 #define NOTEBOOK_H
 #include <string>
 #include <iostream>
+#include "Data.h"
 using namespace std;
 class Notebook
 {
 public:
     Notebook();
+    Notebook(int, int, int);
     ~Notebook();
     void ligarDesligarAparelho();
     void executarPrograma(string prog);
@@ -18,6 +20,7 @@ private:
     string programa;
     int volume;
     static int versaoDaBios;
+    Data dataDeFabricacao;
 };
 
 #endif // NOTEBOOK_H

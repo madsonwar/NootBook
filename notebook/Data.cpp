@@ -1,17 +1,10 @@
 #include "Data.h"
 
-Data::Data()
-{
-    dia=0;
-    mes=0;
-    ano=0;
-}
-Data::Data(int d, int m, int da)
+Data::Data(int d, int m, int a)
 {
     dia=d;
     mes=m;
-    ano=da;
-    
+    ano=a;
 }
 
 Data::~Data()

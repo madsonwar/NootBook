@@ -1,12 +1,26 @@
 #include "Notebook.h"
 #include <string>
 #include <iostream>
+#include "Data.h"
 using namespace std;
 Notebook::Notebook()
 {
     ligado = false;
     programa = "Desconhecido";
     volume = 0;
+}
+Notebook::Notebook(int d, int m, int a):dataDeFabricacao(d,m,a)
+{
+    ligado = false;
+    programa = "Desconhecido";
+    volume = 0;
+    
+}
+
+Notebook::Notebook()
+{
+    
+    
 }
 
 Notebook::~Notebook()

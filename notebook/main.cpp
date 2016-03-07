@@ -2,10 +2,12 @@
 #include <string>
 #include <iostream>
 #include "Notebook.h"
+#include "Data.h"
 using namespace std;
 int main(int argc, char **argv)
 {
-	Notebook dell;
+	Notebook dell(5,7,8);
+    
     
     dell.executarPrograma("anti virus");
     dell.ligarDesligarAparelho();
