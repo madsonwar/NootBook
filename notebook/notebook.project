@@ -96,5 +96,7 @@
     <File Name="Notebook.cpp"/>
     <File Name="Data.h"/>
     <File Name="Data.cpp"/>
+    <File Name="Device.h"/>
+    <File Name="Device.cpp"/>
   </VirtualDirectory>
 </CodeLite_Project>

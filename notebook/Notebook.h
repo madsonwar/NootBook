@@ -6,6 +6,7 @@
 using namespace std;
 class Notebook
 {
+    friend ostream &operator<<(ostream &,const Notebook &)
 public:
     Notebook();
     Notebook(int, int, int);
