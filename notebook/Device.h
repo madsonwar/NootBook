@@ -7,7 +7,7 @@
 using namespace std;
 class Device : public Notebook
 {
-    friend ostream &operator<<(ostream &,const Notebook &)
+    friend ostream &operator<<(ostream &,const Device &)
 public:
     Device();
     ~Device();

@@ -12,3 +12,20 @@ Device::~Device()
 {
 }
 
+Device::Device(Device &o)
+{
+    marca = o.marca;
+    voltagem = o.voltagem;
+}
+
+
+void Device::printfMarca()
+{
+    cout << " A marca do aparelho eh:" << marca << '\n';
+    
+}
+
+void Device::printfVoltagem()
+{
+    cout << " A voltagem do aparelho eh" << voltagem << '\n';
+}

@@ -2,14 +2,16 @@
 #include <string>
 #include <iostream>
 #include "Data.h"
+
 using namespace std;
+int Notebook::versaodaBios = 0;
 Notebook::Notebook()
 {
     ligado = false;
     programa = "Desconhecido";
     volume = 0;
 }
-Notebook::Notebook(int d, int m, int a):dataDeFabricacao(d,m,a)
+Notebook::Notebook():dataDeFabricacao(5,10,1980)
 {
     ligado = false;
     programa = "Desconhecido";
@@ -21,10 +23,21 @@ Notebook::Notebook()
 {
     
     
+}
+
+Notebook::Notebook(Notebook &p)
+{
+    ligado = p.ligado;
+    programa = p.programa;
+    volume = p.volume;
 }
 
 Notebook::~Notebook()
 {
+}
+ostream &operator<<(ostream & out,const Notebook & comp)
+{
+    output << "(" << comp.dataDeFabricacao << ")";
 }
 
 void Notebook::executarPrograma(string a)

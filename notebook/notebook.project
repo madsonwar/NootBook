@@ -98,5 +98,7 @@
     <File Name="Data.cpp"/>
     <File Name="Device.h"/>
     <File Name="Device.cpp"/>
+    <File Name="Tablet.h"/>
+    <File Name="Tablet.cpp"/>
   </VirtualDirectory>
 </CodeLite_Project>

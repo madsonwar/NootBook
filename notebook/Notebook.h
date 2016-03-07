@@ -10,6 +10,7 @@ class Notebook
 public:
     Notebook();
     Notebook(int, int, int);
+    Notebook(Notebook &);
     ~Notebook();
     void ligarDesligarAparelho();
     void executarPrograma(string prog);
