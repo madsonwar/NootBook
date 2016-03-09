@@ -10,6 +10,7 @@ class Device : public Notebook
     friend ostream &operator<<(ostream &,const Device &)
 public:
     Device();
+    Device(const Device &);
     ~Device();
     void printfMarca();
     void printfVoltagem();

@@ -6,7 +6,7 @@
 using namespace std;
 int main(int argc, char **argv)
 {
-	Notebook dell(5,7,8);
+	Notebook dell;
     
     
     dell.executarPrograma("anti virus");

@@ -35,9 +35,12 @@ Notebook::Notebook(Notebook &p)
 Notebook::~Notebook()
 {
 }
-ostream &operator<<(ostream & out,const Notebook & comp)
+ostream &operator<<(ostream & output,const Notebook &comp)
 {
-    output << "(" << comp.dataDeFabricacao << ")";
+    output << "O volome do aparelho eh:" << comp.volume;
+    
+    return output;
+    
 }
 
 void Notebook::executarPrograma(string a)

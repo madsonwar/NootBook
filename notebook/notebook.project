@@ -100,5 +100,7 @@
     <File Name="Device.cpp"/>
     <File Name="Tablet.h"/>
     <File Name="Tablet.cpp"/>
+    <File Name="Smartphone.h"/>
+    <File Name="Smartphone.cpp"/>
   </VirtualDirectory>
 </CodeLite_Project>
