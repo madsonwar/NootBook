@@ -13,6 +13,9 @@ public:
     Smartphone();
     ~Smartphone();
     void printfVersaoIos();
+      bool operator== (const Smartphone &);
+    const Smartphone & operator= (const Smartphone &)
+    bool operator!= (const Smartphone &)
     
 private:
     

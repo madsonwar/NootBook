@@ -88,7 +88,7 @@ void Notebook::dimVol()
         cout << "O aparelho estah desligado\n";
 }
 
-bool Notebook::operator==(const Notebook &c)
+bool Notebook::operator == (const Notebook &c)
 {
     if(ligado != c.ligado)
         return false;

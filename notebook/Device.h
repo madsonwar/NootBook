@@ -14,6 +14,9 @@ public:
     ~Device();
     void printfMarca();
     void printfVoltagem();
+      bool operator== (const Device &);
+    const Device & operator= (const Device &)
+    bool operator!= (const Device &)
     
 private:
     string marca;

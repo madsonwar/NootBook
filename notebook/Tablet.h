@@ -9,6 +9,9 @@ public:
     Tablet(Tablet &);
     ~Tablet();
     void carregarBateria();
+      bool operator== (const Tablet &);
+    const Tablet & operator= (const Tablet &)
+    bool operator!= (const Tablet &)
     
 private:
     int bateria;

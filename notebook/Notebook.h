@@ -16,6 +16,10 @@ public:
     void executarPrograma(string prog);
     void aumVol();
     void dimVol();
+    bool operator== (const Notebook &);
+    const Notebook & operator= (const Notebook &)
+    bool operator!= (const Notebook &)
+    
 private:
     
     bool ligado;

@@ -28,3 +28,14 @@ ostream &operator<<(ostream & output,const Smartphone &comp)
     return output;
     
 }
+
+bool Smartphone::operator == (const Smartphone &c)
+{
+    if(static_cast<Device>(*this) != static_cast<Device>(c) )
+        return false;
+    if(versaoDoIos!= c.versaoDoIos)
+        return false;
+    
+        
+    
+}
