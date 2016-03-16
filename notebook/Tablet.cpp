@@ -25,3 +25,12 @@ void Tablet::carregarBateria()
          cout << "A bateria estah carregando:" << bateria <<'\n';
     }
 }
+
+ostream &operator<<(ostream & output,const Tablet &comp)
+{
+    output << static_cast< Notebook > (comp)
+            << "A bateria eh" << comp.bateria;
+            
+    return output;
+    
+}

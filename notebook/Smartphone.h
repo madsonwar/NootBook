@@ -8,6 +8,7 @@
 using namespace std;
 class Smartphone : public Device
 {
+    friend ostream &operator<<(ostream &,const Smartphone &);
 public:
     Smartphone();
     ~Smartphone();

@@ -38,7 +38,7 @@ Notebook::~Notebook()
 ostream &operator<<(ostream & output,const Notebook &comp)
 {
     output << "O volome do aparelho eh:" << comp.volume;
-    
+            
     return output;
     
 }
@@ -86,4 +86,15 @@ void Notebook::dimVol()
     }
     else
         cout << "O aparelho estah desligado\n";
+}
+
+bool Notebook::operator==(const Notebook &c)
+{
+    if(ligado != c.ligado)
+        return false;
+    if(programa != c.programa)
+        return false;
+    if(volume != c.volume)
+        return false;
+    
 }

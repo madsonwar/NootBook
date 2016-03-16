@@ -29,3 +29,13 @@ void Device::printfVoltagem()
 {
     cout << " A voltagem do aparelho eh" << voltagem << '\n';
 }
+
+ostream &operator<<(ostream & output,const Device &comp)
+{
+    output << static_cast< Notebook > (comp)
+            << "voltagem eh" << voltagem;
+            
+    return output;
+    
+}
+

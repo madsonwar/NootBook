@@ -7,13 +7,14 @@
 using namespace std;
 class Device : public Notebook
 {
-    friend ostream &operator<<(ostream &,const Device &)
+    friend ostream &operator<<(ostream &,const Device &);
 public:
     Device();
     Device(const Device &);
     ~Device();
     void printfMarca();
     void printfVoltagem();
+    
 private:
     string marca;
     float voltagem;
