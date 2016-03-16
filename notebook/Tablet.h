@@ -8,8 +8,11 @@ public:
     Tablet();
     Tablet(Tablet &);
     ~Tablet();
+    virtual void ligarDesligarAparelho();
+    virtual void dimVol();
+    virtual void aumVol();
     void carregarBateria();
-      bool operator== (const Tablet &);
+    bool operator== (const Tablet &);
     const Tablet & operator= (const Tablet &)
     bool operator!= (const Tablet &)
     

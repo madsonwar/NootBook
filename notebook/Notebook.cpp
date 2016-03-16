@@ -56,40 +56,20 @@ void Notebook::executarPrograma(string a)
 
 void Notebook::ligarDesligarAparelho()
 {
-    if( ligado )
-    {
-        ligado = false;
-        cout << "O aparelho foi desligado\n";
-    }
-    else
-    {
-        ligado=true;
-        cout << "O aparelho foi ligado\n";
-        
-    }
+   
 }
 
 void Notebook::aumVol()
 {
-    if( ligado )
-    {    volume +=2;
-        cout << "O volume foi aumentado:" << volume <<'\n';
-    }
-    else
-        cout << "O aparelho estah desligado\n";
+     
 }
 
 void Notebook::dimVol()
 {
-    if( ligado )
-    {    volume -=2;
-        cout << "O volume foi diminuido:" << volume <<'\n';
-    }
-    else
-        cout << "O aparelho estah desligado\n";
+    
 }
 
-bool Notebook::operator == (const Notebook &c)
+bool Notebook::operator== (const Notebook &c)
 {
     if(ligado != c.ligado)
         return false;

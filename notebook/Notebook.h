@@ -12,10 +12,10 @@ public:
     Notebook(int, int, int);
     Notebook(Notebook &);
     ~Notebook();
-    void ligarDesligarAparelho();
+    virtual void ligarDesligarAparelho() = 0;
+    virtual void dimVol() = 0;
+    virtual void aumVol() = 0;
     void executarPrograma(string prog);
-    void aumVol();
-    void dimVol();
     bool operator== (const Notebook &);
     const Notebook & operator= (const Notebook &)
     bool operator!= (const Notebook &)

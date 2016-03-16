@@ -12,8 +12,11 @@ class Smartphone : public Device
 public:
     Smartphone();
     ~Smartphone();
+    virtual void ligarDesligarAparelho();
+    virtual void dimVol();
+    virtual void aumVol();
     void printfVersaoIos();
-      bool operator== (const Smartphone &);
+    bool operator== (const Smartphone &);
     const Smartphone & operator= (const Smartphone &)
     bool operator!= (const Smartphone &)
     

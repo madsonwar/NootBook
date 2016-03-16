@@ -52,3 +52,37 @@ bool Smartphone::operator!=(const Smartphone &c)
 return !(*this==c);
 }
 
+void Smartphone::ligarDesligarAparelho()
+{
+    if( ligado )
+    {
+        ligado = false;
+        cout << "O smartphone foi desligado \n";
+    }
+    else
+    {
+        ligado=true;
+        cout << "O smartphone foi ligado\n";
+        
+    }
+}
+
+void Smartphone::aumVol()
+{
+     if( ligado )
+    {    volume +=1;
+        cout << "O volume do smartphone foi aumentado:" << volume <<'\n';
+    }
+    else
+        cout << "O smartphone estah desligado\n";
+}
+
+void Smartphone::dimVol()
+{
+     if( ligado )
+    {    volume -=1;
+        cout << "O volume do smartphone foi aumentado:" << volume <<'\n';
+    }
+    else
+        cout << "O smartphone estah desligado\n";
+}

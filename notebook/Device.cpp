@@ -63,3 +63,38 @@ bool Device::operator!=(const Device &c)
 {
 return !(*this==c);
 }
+
+void Device::ligarDesligarAparelho()
+{
+    if( ligado )
+    {
+        ligado = false;
+        cout << "O Device foi desligado\n";
+    }
+    else
+    {
+        ligado=true;
+        cout << "O Device foi ligado\n";
+        
+    }
+}
+
+void Device::aumVol()
+{
+    if( ligado )
+    {    volume +=3;
+        cout << "O volume do Device foi aumentado:" << volume <<'\n';
+    }
+    else
+        cout << "O Device estah desligado\n";
+}
+
+void Notebook::dimVol()
+{
+    if( ligado )
+    {    volume -=3;
+        cout << "O volume do Device foi diminuido:" << volume <<'\n';
+    }
+    else
+        cout << "O Device estah desligado\n";
+}
