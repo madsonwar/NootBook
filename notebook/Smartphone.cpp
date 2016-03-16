@@ -39,3 +39,16 @@ bool Smartphone::operator == (const Smartphone &c)
         
     
 }
+
+const Smartphone & Smartphone::operator=(const Smartphone &p)
+{
+    static_cast <Device&> (*this) = static_cast <Device> (p);
+   versaoDoIos=p.versaoDoIos; 
+    return *this;
+}
+
+bool Smartphone::operator!=(const Smartphone &c)
+{
+return !(*this==c);
+}
+

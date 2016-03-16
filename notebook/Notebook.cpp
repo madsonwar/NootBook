@@ -30,6 +30,7 @@ Notebook::Notebook(Notebook &p)
     ligado = p.ligado;
     programa = p.programa;
     volume = p.volume;
+    dataDeFabricacao = p.dataDeFabricacao;
 }
 
 Notebook::~Notebook()
@@ -97,4 +98,20 @@ bool Notebook::operator == (const Notebook &c)
     if(volume != c.volume)
         return false;
     
+}
+
+const Notebook & Notebook::operator=(const Notebook &c)
+{
+    volume = c.volume;
+    ligado = c.ligado;
+    programa = c.programa;
+    dataDeFabricacao = c.dataDeFabricacao;
+    
+   
+    return *this;
+}
+
+bool Notebook::operator!=(const Notebook &c)
+{
+return !(*this==c);
 }

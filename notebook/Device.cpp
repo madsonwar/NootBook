@@ -39,7 +39,7 @@ ostream &operator<<(ostream & output,const Device &comp)
     
 }
 
-bool Device::operator == (const Device &c)
+bool Device::operator== (const Device &c)
 {
     if(static_cast<Notebook>(*this) != static_cast<Notebook>(c) )
         return false;
@@ -49,4 +49,17 @@ bool Device::operator == (const Device &c)
         return false;
         
     
+}
+
+const Device & Device::operator=(const Device &x)
+{
+    static_cast <Notebook&> (*this) = static_cast <Notebook> (x);
+    marca = x.marca;
+    voltagem=x.voltagem;
+    return *this;
+}
+
+bool Device::operator!=(const Device &c)
+{
+return !(*this==c);
 }

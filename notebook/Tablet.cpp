@@ -35,7 +35,7 @@ ostream &operator<<(ostream & output,const Tablet &comp)
     
 }
 
-bool Tablet::operator == (const Tablet &c)
+bool Tablet::operator== (const Tablet &c)
 {
     if(static_cast<Notebook>(*this) != static_cast<Notebook>(c) )
         return false;
@@ -43,4 +43,17 @@ bool Tablet::operator == (const Tablet &c)
         return false;
     
     
+}
+
+const Tablet & Tablet::operator=(const Tablet &x)
+{
+    static_cast <Notebook&> (*this) = static_cast <Notebook> (x);
+    bateria=x.bateria;
+    
+    return *this;
+}
+
+bool Tablet::operator!=(const Tablet &c)
+{
+return !(*this==c);
 }
