@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeLite_Workspace Name="prog2" Database="">
-  <Project Name="notebook" Path="../../git/NoteBook/notebook/notebook.project" Active="No"/>
+<CodeLite_Workspace Name="Programacao II" Database="">
   <Project Name="Notebook" Path="Notebook/Notebook.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
