@@ -1,21 +1,32 @@
 #include "Computador.h"
 #include "Device.h"
 
-Computador::Computador()
+#include <string>
+#include <iostream>
+using namespace std;
+Computador::Computador():Device(1,5,1220),dataatual()
 {
+    sistemaOperacional = "Desconhecido";
+    programa = "Desconhecido";
+    
+    
 }
 
-Computador::Computador(const Computador &comp)
-:Device(static_cast<Device>(comp))
+Computador::Computador(const Computador &comp):Device(static_cast<Device>(comp))
+
 {
     sistemaOperacional = comp.sistemaOperacional;
-}
+    programa = comp.programa;
+    dataatual = comp.dataatual;
+    
+}   
+
 Computador::~Computador()
 {
 }
 
-
-/*void Computador::aumVol()
+/*
+void Computador::aumVol()
 {
     
 }
@@ -34,26 +45,26 @@ void Computador::printfVerBios()
 {
     
 }
-
+*/
 bool Computador::operator== (const Computador &c)
 {
-    if(volume != c.volume)
+    if(static_cast <Device> (*this) != static_cast <Device>(c))
         return false;
-    if(marca != c.marca)
+    if(sistemaOperacional != c.sistemaOperacional)
         return false;
-    if(ligado != c.ligado)
+    if(programa != c.programa)
         return false;
-    if(dataDeFabricacao != c.dataDeFabricacao)
+    if(dataatual != c.dataatual)
         return false;
     return true;
 }
 
 const Computador & Computador::operator=(const Computador &c)
 {
-    volume = c.volume;
-    marca = c.marca;
-    ligado = c.ligado;
-    dataDeFabricacao = c.dataDeFabricacao;    
+    static_cast <Device> (*this) = static_cast <Device> (c);
+    sistemaOperacional = c.sistemaOperacional;
+    programa = c.programa;
+    dataatual = c.dataatual;
        
     return *this;
 }
@@ -63,13 +74,12 @@ bool Computador::operator!=(const Computador &c)
 return !(*this==c);
 }
 
-ostream &operator<<(ostream & output,const Computador &aparelho)
+ostream &operator<<(ostream &output,const Computador &aparelho)
 {
-    output << "O aparelho esta:" << aparelho.ligado <<'\n'
-            <<"Sua marca eh:" << aparelho.marca << '\n'
-            <<"O volume eh:" << aparelho.volume << '\n'
-            <<'\n'<<'A data de fabricacao eh:' << aparelho.dataDeFabricacao << '\n';
+    output << static_cast < Device >(aparelho)
+            <<"Sistema operacio:" << aparelho.sistemaOperacional << '\n'
+            <<"O programa que estah sendo executa eh:" << aparelho.programa << '\n'
+            <<'\n'<<"Adata atual eh:" << aparelho.dataatual << '\n';
     return output;
     
 }
-*/

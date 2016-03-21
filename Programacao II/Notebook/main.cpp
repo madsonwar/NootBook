@@ -1,23 +1,23 @@
 #include <stdio.h>
 #include "Data.h"
 #include "Device.h"
-
+#include "Computador.h"
+#include "Notebook.h"
 #include <iostream>
 
 using namespace std;
 int main(int argc, char **argv)
 {
-   
-   /*Device aparelho(12,5,2500);
-   cout << aparelho;
-   cout << aparelho.dataDeFabricacao;
-    */
+   Computador a;
+   Notebook dell;
+  
    //Teste da sobrecarga do cout.
-   /*cout << '\n';
-    Data data(12,5,2500);
-	*/
+   cout << '\n';
+    
+	
     
     
     
-    //cout << data;
+    cout << dell;
+    
 }
