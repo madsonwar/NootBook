@@ -1,0 +1,1 @@
+./Debug/main.cpp.o ./Debug/Device.cpp.o ./Debug/Data.cpp.o ./Debug/Computador.cpp.o ./Debug/Notebook.cpp.o ./Debug/Smartphone.cpp.o   
