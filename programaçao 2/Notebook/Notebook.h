@@ -5,6 +5,7 @@ class Notebook
 {
 public:
     Notebook();
+    Notebook(int,string);
     ~Notebook();
     void printfvoltagem();
     virtual void printfBateria();

@@ -102,5 +102,7 @@
     <File Name="Notebook.cpp"/>
     <File Name="ComputadorPessoal.h"/>
     <File Name="ComputadorPessoal.cpp"/>
+    <File Name="Modem.h"/>
+    <File Name="Modem.cpp"/>
   </VirtualDirectory>
 </CodeLite_Project>

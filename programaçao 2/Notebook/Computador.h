@@ -19,6 +19,7 @@ protected:
     string sistemaOperacional;
     static int versaoDaBios;
     string programa;
+    
 };
 
 #endif // COMPUTADOR_H
