@@ -92,15 +92,20 @@
   </Settings>
   <VirtualDirectory Name="src">
     <File Name="main.cpp"/>
-    <File Name="Device.h"/>
-    <File Name="Device.cpp"/>
-    <File Name="Data.h"/>
-    <File Name="Data.cpp"/>
-    <File Name="Computador.h"/>
-    <File Name="Computador.cpp"/>
+    <File Name="../../../Downloads/Computador.cpp"/>
+    <File Name="../../../Downloads/Computador.h"/>
+    <File Name="../../../Downloads/ComputadorPessoal.cpp"/>
+    <File Name="../../../Downloads/ComputadorPessoal.h"/>
+    <File Name="../../../Downloads/ComputadorPortatil.cpp"/>
+    <File Name="../../../Downloads/ComputadorPortatil.h"/>
+    <File Name="../../../Downloads/Data.cpp"/>
+    <File Name="../../../Downloads/Data.h"/>
+    <File Name="../../../Downloads/Device.cpp"/>
+    <File Name="../../../Downloads/Device.h"/>
+    <File Name="../../../Downloads/main.cpp"/>
+    <File Name="../../../Downloads/Modem.cpp"/>
+    <File Name="../../../Downloads/Modem.h"/>
     <File Name="Notebook.h"/>
     <File Name="Notebook.cpp"/>
-    <File Name="Smartphone.h"/>
-    <File Name="Smartphone.cpp"/>
   </VirtualDirectory>
 </CodeLite_Project>
